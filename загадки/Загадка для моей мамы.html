@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+        <meta charset="utf-8">
+ <script>
+ 
+ let question = 'Имя вашего любимого сына';
+ let answer =['егор','' ];
+let flag= false;
+
+let useranswer = prompt(question).toLocaleLowerCase().replace('ё', 'Е');
+   for(let i = 0; i < answer.length ; i++) {
+          if (useranswer == answer[i]) {
+                 alert('И я тебя люблю');
+                 flag=true;
+                 break;
+          }
+   }
+
+if (!flag) alert('Ты что зыбыла как твоего сына зовут, обидно');
+
+/*
+if (useranswer.toLocaleLowerCase().replace('ё', 'Е') ==answer){
+       alert('И я тебя люблю');
+}else{
+       alert('Обидно');
+}
+
+
+ /*let numd = parseInt(prompt('Введите число:'));
+  if (isNaN(numd)) {
+         console.error('это не число');
+  }
+ else {console.log(` число првильное -${numd}!`);
+}
+ */
+ 
+ /*
+        let a =prompt('Введите число:');
+ document.write (`Вы ввели ${a}`);
+*/
+ </script>
+<body></body>
+</html>
